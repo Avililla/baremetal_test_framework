@@ -1,0 +1,56 @@
+# Nombre del Proyecto
+PROJECT_NAME           = "Bare-Metal Test Framework (BMT)"
+
+PROJECT_NUMBER         = 1.0
+
+OUTPUT_DIRECTORY       = ./doxygen_docs
+
+
+GENERATE_HTML          = YES
+
+HTML_DYNAMIC_SECTIONS  = YES
+
+GENERATE_LATEX         = YES
+
+
+INPUT                  = ./include \
+                         ./src \
+                         ./examples # Opcional, si quieres documentar ejemplos
+
+RECURSIVE              = YES
+
+
+EXTRACT_ALL            = YES 
+
+EXTRACT_PRIVATE        = NO
+
+EXTRACT_STATIC         = YES
+
+HIDE_UNDOC_MEMBERS     = YES
+HIDE_UNDOC_CLASSES     = YES
+
+
+FILE_PATTERNS          = *.c *.h
+
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO # Para que expanda todas las macros
+
+
+HAVE_DOT               = YES
+
+INCLUDE_GRAPH          = YES
+
+CALL_GRAPH             = YES
+
+CALLER_GRAPH           = YES
+
+DIRECTORY_GRAPH        = YES
+
+DOT_IMAGE_FORMAT       = png 
+
+SOURCE_BROWSER         = YES
+
+STRIP_CODE_COMMENTS    = NO 
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
